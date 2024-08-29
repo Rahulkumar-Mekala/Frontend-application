@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Counter with Prototypes</title>
+    
+</head>
+<body>
+    <div>
+        <h1 id="counter">0</h1>
+        <button id="countButton">Count</button>
+        <button id="resetButton">Reset</button>
+        <button id="setButton">Set to 10</button>
+    </div>
+    <script>
+        
+        function Counter() {
+            this._count = 0;
+        }
+
+        Counter.prototype = {
+            get count() {
+                return this._count;
+            },
+
+            set count(value) {
+                if (typeof value === 'number' && value >= 0) {
+                    this._count = value;
+                }
+            },
+
+            increment() {
+                this.count += 1;
+            },
+
+            reset() {
+                this.count = 0;
+            },
+
+            setTo(value) {
+                if (typeof value === 'number' && value >= 0) {
+                    this.count = value;
+                }
+            }
+        };
+
+        const counter = new Counter();
+
+        document.getElementById('countButton').addEventListener('click', () => {
+            counter.increment();
+            document.getElementById('counter').textContent = counter.count;
+        });
+
+        document.getElementById('resetButton').addEventListener('click', () => {
+            counter.reset();
+            document.getElementById('counter').textContent = counter.count;
+        });
+
+        document.getElementById('setButton').addEventListener('click', () => {
+            counter.setTo(10);
+            document.getElementById('counter').textContent = counter.count;
+        });
+    </script>
+</body>
+</html>

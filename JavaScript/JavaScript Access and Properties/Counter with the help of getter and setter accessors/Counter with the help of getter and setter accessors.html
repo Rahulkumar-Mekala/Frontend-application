@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    
+</head>
+<body>
+    <div>
+        <h1 id="counter">0</h1>
+        <button id="countButton">Count</button>
+    </div>
+    <script>
+        class Counter {
+            constructor() {
+                this._count = 0;
+            }
+
+            get count() {
+                return this._count;
+            }
+
+            set count(value) {
+                if (typeof value === 'number' && value >= 0) {
+                    this._count = value;
+                }
+            }
+
+            increment() {
+                this.count += 1;
+            }
+        }
+
+        const counter = new Counter();
+
+        document.getElementById('countButton').addEventListener('click', () => {
+            counter.increment();
+            document.getElementById('counter').textContent = counter.count;
+        });
+    </script>
+</body>
+</html>

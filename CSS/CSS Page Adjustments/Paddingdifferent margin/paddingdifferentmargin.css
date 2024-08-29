@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    color: beige;
+   
+
+}
+#margin{
+    
+    padding:60px;
+    background-color: bisque;
+    color: black;
+  text-align: center;
+  margin: 50px;
+  margin-left: 360px;
+  margin-right: 360px;
+}

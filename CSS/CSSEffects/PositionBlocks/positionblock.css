@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    height: 2000px; /* Added to enable scrolling */
+    background-color: #f0f0f0;
+}
+
+.static-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: static; /* Default position */
+}
+
+.relative-box {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.fixed-box {
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+}
+
+.absolute-box {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.sticky-box {
+    background-color: #9C27B0;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+}

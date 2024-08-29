@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode Example</title>
+</head>
+<body>
+    <script>
+        try {
+                myVariable = "Hello, Strict Mode!";
+            document.writeln("Value of myVariable: " + myVariable + "<br>");
+        } catch (e) {
+        document.writeln("Error: " + e.message + "<br>");
+        }
+        
+
+        let myVariable = "Now it's declared!";
+        document.writeln("Value of myVariable after declaration: " + myVariable + "<br>");
+    </script>
+</body>
+</html>

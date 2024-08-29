@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example</title>
+    <script>
+        function manageJSON() {
+            let user = {
+                name: "Rahul",
+                age: 23,
+                skills: ["Java", "JavaScript", "HTML"]
+            };
+        
+            let jsonString = JSON.stringify(user);
+            document.writeln("JSON String:", jsonString+"<br><br>");
+         let parsedObject = JSON.parse(jsonString+"<br><br>");
+            document.writeln("Parsed Object:", parsedObject);
+
+            document.writeln("Name:", parsedObject.name);
+            document.writeln("Age:", parsedObject.age);
+            document.writeln("Skills:", parsedObject.skills);
+        }
+    </script>
+</head>
+<body onload="manageJSON()">
+    <h1>JSON Example in JavaScript</h1>
+</body>
+</html>

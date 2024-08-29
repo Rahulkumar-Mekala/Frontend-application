@@ -1,0 +1,24 @@
+#Visible{
+    visibility: visible;;
+}
+#Hidden{
+    visibility: hidden;
+}
+#Collapsed{
+    visibility: collapse;
+}
+#none{
+    display: none;
+}
+#Inline{
+    display: inline;
+}
+#block{
+    display: block;
+}
+#contents{
+    display: contents;
+}
+#list-item{
+    display: list-item;
+}

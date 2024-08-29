@@ -1,0 +1,22 @@
+body{
+    background-color: beige;
+font-style: italic;
+color: blue;
+border-style: dashed;
+width: 350px;
+height:50%;
+width: 50%;
+height: 50%;
+
+
+}
+div{
+    background-color: beige;
+    font-style:oblique;
+    color: blue;
+    border-style: dashed;
+    width: 350px;
+    height: 400px;
+    width: 400px;
+    height: 50%; 
+}

@@ -1,0 +1,36 @@
+@keyframes demo {
+    0% { background-color: red; left: 0px; top: 0px; }
+    50% { background-color: yellow; left: 200px; top: 0px; }
+    100% { background-color: red; left: 200px; top: 200px; }
+}
+.animated-box{
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: demo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+     animation-delay: 2s ;
+}
+.pagination{
+    display: inline-block;
+    margin-top: 20px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 4px; /* With spaces */
+}
+.pagination a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.pagination-no-space a {
+    margin: 0; /* Without spaces */
+}

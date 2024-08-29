@@ -1,0 +1,14 @@
+table,th,tr,td{
+  border: 1px;
+   border-style: dotted;
+}
+#demo:hover{
+    background-color: burlywood;
+    color: blue;
+    
+}
+#demo{
+    background-color: brown;
+    color: aqua;
+}
+

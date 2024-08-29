@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Call and Apply Example</title>
+</head>
+<body>
+    <script>
+        function greet(greeting, punctuation) {
+            document.writeln(`${greeting},${this.name}${punctuation}`);
+        }
+
+        const person = {
+            name: 'Alice'
+        };
+
+
+       
+        greet.call(person, 'Hello', '!'+"<br>"); 
+
+       
+        greet.apply(person, ['Hi', '.']); 
+    </script>
+</body>
+</html>
